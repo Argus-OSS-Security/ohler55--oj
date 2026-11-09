@@ -1,22 +1,23 @@
 name: clang-format Check
 
-on:
-  push:
-    branches:
-      - develop
-      - master
-    paths:
-      - ".clang-format"
-      - ".github/workflows/clang-format.yml"
-      - "**/*.c"
-      - "**/*.h"
-  pull_request:
-    paths:
-      - ".clang-format"
-      - ".github/workflows/clang-format.yml"
-      - "**/*.c"
-      - "**/*.h"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - develop
+#       - master
+#     paths:
+#       - ".clang-format"
+#       - ".github/workflows/clang-format.yml"
+#       - "**/*.c"
+#       - "**/*.h"
+#   pull_request:
+#     paths:
+#       - ".clang-format"
+#       - ".github/workflows/clang-format.yml"
+#       - "**/*.c"
+#       - "**/*.h"
+# 
 jobs:
   formatting-check:
     name: Formatting Check
